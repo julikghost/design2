@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* сбрасываем стандартное «bold», 
+шрифт становится таким же как его родительский элемент */
+strong, b {
+font-weight: inherit; 
+}
+
+/*СБРОС СТИЛЕЙ*/
+
+
+@font-face
+{
+  font-family:Brandon;
+  src:url('../fonts/Brandon.otf')
+} /*шрифты*/
+body{
+  font-family: Brandon;
+}
+
+  .section-12{
+    background: #7690c5;
+    padding: 100px 0 100px 0;
+  }
+  .section-12 .h2{
+     font-size: 60px;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+   .section-12 p{
+  color:#fff;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+  
+.form input, .form textarea{
+width:100%;
+max-width: 458px;
+border-radius: 2%;
+}
+/* растояние между полями*/
+.form input {
+min-height:50px;
+} 
+.form input[type="text"]{
+  margin-bottom: 29px;
+}
+.form input[type="email"]{
+  margin-bottom: 20px;
+}
+.form textarea
+{
+min-height:210px;
+resize: none; /* не меняет размер поля  */
+} 
+.form input[type="text"]::placeholder, .form input[type="email"]::placeholder, .form textarea::placeholder
+{
+font-size: 18px;
+line-height: 1.2;
+color: rgb(187, 187, 187);
+padding:16px 0  0 18px;/*отступ текста от края формы */
+  }
+  .section-12 input[type="submit"] {
+max-width: 100px;
+background-color: #555;
+border: 2px solid #fff;
+border-radius:50%;
+color:#fff;
+font-size: 18px;
+text-align: center;
+
+  }
+  .section-12 ul{
+    list-style-type: none;
+  
+}
+.section-12 li{
+      margin-bottom: 40px;
+}
+.section-12 a{
+  text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 468px){
+
+.section-12 a{
+  font-size: 12px;
+}
+.section-12 i{
+  margin-right:0px;
+  font-size: 10px;
+}
+}
+
