@@ -1,23 +1,23 @@
 /**
  * Created by tingyuan on 15/12/29.
  */
-;
-(function ($) {
+;(function ($) {
     if ($ === undefined) {
         return;
     }
 
     var defaultConfig = {
-        num: 3, 
-        maxWidth: 780,
-            maxHeight: 595,
-       
+        num: 3, //要显示的数量，应该是个奇数
+        maxWidth: 782, //代表中央图片的宽度
+        maxHeight: 595, //中央图片的高度
         autoPlay: true, //是否自动滚动播放
         showTime: 1000, //autoPlay为true时这个属性才有用
         animationTime: 300, //
         scale: 0.8,
         distance: 50
     };
+
+    
 
 
     function getzIndexValue(num, direction) {
@@ -213,7 +213,8 @@
         $slider.find('.left').css({
             position: 'absolute',
             left: 10,
-            top: '50%',
+       
+
             'z-index': 9999 + $slider.data('totalNum') + 1
         });
 
@@ -256,7 +257,7 @@
     }
 
 
-    $.fn.carousel = function (param) {
+    $.fn.slider = function (param) {
         var config;
         var totalNum;
         var $target;
