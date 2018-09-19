@@ -477,7 +477,7 @@ padding: 70px 0 255px;
 background:url(img/bg_04.png);
 background-repeat: no-repeat;
 background-size: cover;
-height: auto;
+/*height: auto;*/
 padding: 215px 0 110px;
   }
   .section-4 h2{
@@ -509,7 +509,7 @@ padding: 215px 0 110px;
   top: 0;
   bottom: 0;
   background-image: url(img/video.png);
-    background-size: contain;
+    background-size: cover;
   background-repeat: no-repeat; 
    background-color: transparent;
    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.22);
@@ -548,8 +548,8 @@ padding: 215px 0 110px;
   border: none;
   background-color: transparent;
   background-image: url(img/ybtn.png);
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: cover;
    top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -557,7 +557,7 @@ padding: 215px 0 110px;
   z-index: 10;
   cursor: pointer;
 }
-
+/*кнопка*/
 /* -------------------------------------------------------------------------
    end Video Youtube
  * ------------------------------------------------------------------------- */
@@ -605,6 +605,7 @@ padding: 215px 0 110px;
  }
 
 .box-down li{
+  font-size:14px;
   margin-bottom: 20px;
 }
 .box-down ul{
@@ -674,16 +675,14 @@ text-decoration: none;
     }
 
     .slider{
-        height:595px;
-        margin:30px auto;
+       min-height:595px;
+     
     }
 
     .slider ul {}
 
     .slider li {
-        /* transition: width .5s, height .5s, top .5s, left .5s;
-            -webkit-transition: width .5s, height .5s, top .5s, left .5s;
-            */
+      
             padding-top: 73px;
             background: #fff;
            box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.22);
@@ -763,7 +762,7 @@ background-image: url(img/bg_08.png);
 background-size: cover;
 background-repeat: no-repeat;
 height: auto;
-   padding:10px 0 76px;
+padding:10px 0 76px;
 }
 .section-8 h2{
     color: rgb(255, 255, 255);
@@ -807,16 +806,11 @@ margin-left:20px;
 }
 /* медиазапросы  дописать*/
 @media (max-width: 1199px){
-.section-1{
-  }
+
 .section-1 h1{
     font-size:40px;
     margin-bottom: 40px;
   }
- .wrapper{
-min-height:390px;
- }
-
 .section-3
 {
   padding: 100px 0 100px;
@@ -824,14 +818,36 @@ min-height:390px;
 .section-3 .empty{
      margin-bottom: 70px;/*пустая строка*/
         }
-
-
-
+        
+  .section-4{
+    background: url(img/bg_04.png)70% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0 70px;
+  }
+  .section-4 h2{
+  margin-bottom: 45px;
+  }
+ .section-4 .video-container {
+    margin-bottom: 208px;
+    }
+ .section-5 h2{
+  margin-bottom:30px; 
+ }
+ .box-down {
+    padding: 34px 0 26px;
+}
+.box-down ul {
+    margin-bottom: 20px;
+}
+.box-head{
+    padding: 23px 0 7px;
+   }
 .section-6{
 padding: 90px 0 180px;
 }
-}
 
+}
  @media (max-width: 991px){
  .section-1{
   background: url(img/bg_01.png) 70% 70% no-repeat; /* Добавляем фон */
@@ -865,22 +881,43 @@ padding: 140px 0 83px;
     color: rgb(51, 51, 51);
   line-height: 1.5;
     }
- .wrapper{
-min-height:301px;
- }
-  .section-5 h2{
-  margin-bottom:56px; 
- }
-  .box {
-   max-width: 210px;
-  margin-right: 16px;.
-  padding-bottom: 23.1px;
-} 
-.box-head{
-    padding: 32px 0 7px;
-   }
-
+    .box {
+    padding-bottom: 16px;
+  }
+   .box-head h3 {
+    font-size: 20px;
+  }
+    .box-down li {
+    margin-bottom: 5px;
+    font-size: 12px;
+}  
+.box-button {
+      font-size: 12px;
+    max-width: 118px;
+    padding: 10px 14px 11px 14px;
+        }
 }
+.section-6 h2 {
+    margin-bottom: 43px;
+}
+.section-6 img {
+    margin-bottom: 20px;
+}
+.section-6 p {
+      margin-bottom: 38px;
+}
+.section-8 h2 {
+    margin-bottom: 23px;
+}
+.menu a {
+    font-size: 12px;
+     padding-left: 13px;
+}
+.footer {
+    padding: 30px 0 30px 0;
+}
+}
+
 @media(max-width:767px){
  
 .section-1{
@@ -936,9 +973,6 @@ padding: 40px 0 100px;
      margin-bottom: 30px;/*пустая строка*/
         }
 
-.section-5{
-   padding: 50px 0 50px;
-}
 .section-6{
 padding: 40px 0 100px;
 }
