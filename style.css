@@ -379,24 +379,25 @@ background-repeat: no-repeat;
 height: auto;
 background-size: cover;
 padding: 70px 0 255px;
+color: #fff;
   }
-.section-1 h2{
-  font-size: 48px;
+
+.section-1 h1{
   font-family: "Times New Roman", Times, serif;
-  color: #fff;
+   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 181px;
   }
-.section-1 h1 {
-  font-size: 48px;
+.section-1 h2 {
   font-family: "Minion Pro";
-   color:#fff;
+   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 52px;
+  color:#fff;
   }
   .section-1 p {
-  color:#fff;
-  line-height: 1.786;
+   line-height: 1.786;
+   font-size: 14px;
   margin-bottom: 37px;
   }
  .section-1 .button {
@@ -804,191 +805,24 @@ padding:10px 0 76px;
 color:#fff;
 margin-left:20px;
 }
+
 /* медиазапросы  дописать*/
-@media (max-width: 1199px){
-
-.section-1 h1{
-    font-size:40px;
-    margin-bottom: 40px;
-  }
-.section-3
-{
-  padding: 100px 0 100px;
+@media screen and (max-width: 1199px){
+  .section-1 {
+     padding: 10px 0 150px;
 }
-.section-3 .empty{
-     margin-bottom: 70px;/*пустая строка*/
-        }
-        
-  .section-4{
-    background: url(img/bg_04.png)70% 70%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 150px 0 70px;
-  }
-  .section-4 h2{
-  margin-bottom: 45px;
-  }
- .section-4 .video-container {
-    margin-bottom: 208px;
-    }
- .section-5 h2{
-  margin-bottom:30px; 
- }
- .box-down {
-    padding: 34px 0 26px;
+.section-1 h1, .section-1 h2{
+font-size: 40px;
 }
-.box-down ul {
-    margin-bottom: 20px;
-}
-.box-head{
-    padding: 23px 0 7px;
-   }
-.section-6{
-padding: 90px 0 180px;
+.section-1 h1 {
+     margin-bottom: 100px;
 }
 
-}
- @media (max-width: 991px){
- .section-1{
-  background: url(img/bg_01.png) 70% 70% no-repeat; /* Добавляем фон */
-    background-size: cover; 
-    padding:49px 0 178px;/* 70% от padding: 70px 0 255px; */
- }
- .section-1 p{
-    font-size: 12px;
-    line-height: 1.4;
-  margin-bottom: 25px;
-  }
-  .section-2{
-padding: 140px 0 83px;
-    }/*padding:200px 0 119px;*/
-
- .section-2 h2{
-   margin-bottom: 63px;
-    }
-.section-2 i{
-  margin-bottom: 31px;
-}
-.section-2 h3{
-    margin-bottom: 18px;
-  }
-  .section-3 h3{ font-size: 14px;
-  line-height: 1.3;
-   margin-bottom: 10px;
-  }
-  .section-3 p{
-    font-size: 12px;
-    color: rgb(51, 51, 51);
-  line-height: 1.5;
-    }
-    .box {
-    padding-bottom: 16px;
-  }
-   .box-head h3 {
-    font-size: 20px;
-  }
-    .box-down li {
-    margin-bottom: 5px;
-    font-size: 12px;
-}  
-.box-button {
-      font-size: 12px;
-    max-width: 118px;
-    padding: 10px 14px 11px 14px;
-        }
-}
-.section-6 h2 {
-    margin-bottom: 43px;
-}
-.section-6 img {
-    margin-bottom: 20px;
-}
-.section-6 p {
-      margin-bottom: 38px;
-}
-.section-8 h2 {
-    margin-bottom: 23px;
-}
-.menu a {
-    font-size: 12px;
-     padding-left: 13px;
-}
-.footer {
-    padding: 30px 0 30px 0;
-}
+.section-1 h2{
+  margin-bottom: 30px;
 }
 
-@media(max-width:767px){
- 
-.section-1{
-background: url(img/bg_01.png) 50% 50% no-repeat; /* Добавляем фон */
-    background-size: cover; 
-padding: 40px 0 100px;
-  }
-
-  .section-1 h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-.section-1 h1{
-    font-size:30px;
-    margin-bottom: 20px;
-  }
- 
-.section-2{
- padding:50px 0 50px;
-}
-.section-2 h2{
-  font-size: 20px;
-  color: rgb(51, 51, 51);
-  line-height: 1.2;
-  margin-bottom: 40px
-}
-.section-2  .icons{
-  font-size:2em;
-   padding: 15px;
-  border:2px solid #d100bb;
-  border-radius: 50%;
-  background-image: -moz-linear-gradient( 90deg, rgb(37,109,194) 0%, rgb(16,213,219) 100%);/* сама градиентная заливка*/
-  background-image: -webkit-linear-gradient( 90deg, rgb(37,109,194) 0%, rgb(16,213,219) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(37,109,194) 0%, rgb(16,213,219) 100%);
-  -webkit-background-clip: text; /*свойство отображающее градиент  для текста*/
-  -webkit-text-fill-color: transparent; /*свойство отображающее градиент(заполнение градиентом)  для текста*/
-}
-.section-2 i{
-  margin-bottom: 20px;
-}
-.section-2 h3{
-  font-size: 14px;
-    margin-bottom: 15px;
-  }
-  .section-2 p{
-    font-size: 12px;
-  }
-.section-3
-{
-  padding: 100px 0 100px;
-}
-.section-3 .empty{
-     margin-bottom: 30px;/*пустая строка*/
-        }
-
-.section-6{
-padding: 40px 0 100px;
-}
-
-  .box {
-   max-width: 100%;
-  margin-right: 0px;
-  padding-bottom: 23.1px;
-
- }
- .box-head {
-  padding:0px;
-}
-.box-down ul{
-  text-align: center;
+.section-1 p{
+margin-bottom: 10px;
 }
 }
-
-
