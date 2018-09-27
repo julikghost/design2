@@ -437,6 +437,7 @@ color: #fff;
   .section-3 h2{
  margin-bottom: 49px;
 }
+
 /*убираем затемнение по краям*/
 .carousel-control{
   background-image: none !important;
@@ -471,9 +472,9 @@ color: #fff;
   .section-3 p {
     color: rgb(51, 51, 51);
     }
-    .section-3 .empty{
-     margin-bottom: 130px;/*пустая строка*/
-        }
+    .celling{
+  margin-bottom: 110px;
+}
   .section-4{
 background:url(img/bg_04.png);
 background-repeat: no-repeat;
@@ -808,9 +809,7 @@ margin-left:20px;
 
 /* медиазапросы  дописать*/
 @media screen and (max-width: 1199px){
-  .section-1 {
-     padding: 10px 0 150px;
-}
+  
 .section-1 h1, .section-1 h2{
 font-size: 40px;
 }
@@ -821,8 +820,121 @@ font-size: 40px;
 .section-1 h2{
   margin-bottom: 30px;
 }
-
 .section-1 p{
 margin-bottom: 10px;
 }
+.section-2{
+  padding: 100px 0 92px;
+}
+.section-3 {
+    padding: 90px 0 106px;
+}
+.section-3 h2 {
+    margin-bottom: 30px;
+}
+    .celling{
+  margin-bottom: 60px;
+}
+
+.section-5 h2 {
+   margin-bottom: 50px;
+}
+.box {
+        padding-bottom: 10px;
+ }
+.box-head{
+  padding: 10px 0 10px;
+}
+.box-down {
+    padding: 20px 0 20px;
+}
+.section-6 {
+    padding: 80px 0 80px;
+}
+.section-6 h2 {
+    margin-bottom: 25px;
+}
+.section-6 img {
+    margin-bottom: 10px;
+}
+.section-6 p {
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    line-height: 1.563;
+    margin-bottom: 20px;
+}
+}
+@media screen and (max-width: 991px){
+  .section-1 {
+    background: url(img/bg_01.png) 70% 70%;
+    background-size: cover;
+    padding: 10px 0 175px;
+}
+.section-2 h2 {
+    margin-bottom: 50px;
+}
+.section-2 i {
+    margin-bottom: 10px;
+}
+.section-2 h3 {
+        margin-bottom: 10px;
+}
+
+@media screen  and (max-width: 767px) {
+  .section-1{
+    background-image: none;
+    background-color: #1f0023;
+    padding: 20px 0 20px;
+  }
+  .section-1 h1, .section-1 h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.section-1 .button, .section-6 .button {
+   max-width: 140px;
+    padding: 10px 20px 10px 20px;
+    font-size: 12px;
+}
+.section-2{
+padding: 20px 0 20px;
+}
+.section-2 h2, .section-6 h2 {
+   font-size: 16px;
+    margin-bottom: 10px;
+}
+.section-2 h3 {
+    margin-bottom: 0;
+}
+.section-6 {
+    padding: 10px 0 10px;
+}
+
+}
+@media screen  and (max-width: 529px) {
+
+  .section-1 h1, .section-1 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.section-1 p, .section-6 p{ 
+  font-size: 12px;
+}
+ 
+    .section-2 h2 {
+    margin-bottom: 0;
+}
+    .section-2 h3 {
+font-size: 14px;
+}
+}
+@media screen  and (max-width: 397px) {
+
+  .section-1 h1, .section-1 h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.section-1 p{
+  font-size: 10px;
+}
+
 }
