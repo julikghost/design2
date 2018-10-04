@@ -315,3 +315,19 @@
     };
 
 })(jQuery);
+function checkWidth() {
+            if ($(window).width() > 320) {
+                $('.slider').bxSlider({
+                    auto: true,
+                    pause: 2000,
+                    autoHover: true
+                });
+            } else {
+                $('.slider').destroySlider();
+            }
+        };
+ 
+        $(function(){
+            checkWidth();
+            $(window).on('resize', function(){checkWidth()});
+        })(jQuery);
